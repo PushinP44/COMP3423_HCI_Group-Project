@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Transaction detail — Feature 4 states</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a href="#main" class="skip-link">Skip to main content</a>
+<div class="phone-frame">
+  <div class="status-bar"><span>9:41</span><span>●●●●  Wi-Fi  100%</span></div>
+
+  <header class="app-header">
+    <a class="back-link" href="transactions.html">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg>
+      Back
+    </a>
+    <h1>Details</h1>
+    <span style="width:44px"></span>
+  </header>
+
+  <main id="main" class="content">
+
+    <div class="summary-card" data-state="success">
+      <div style="text-align:center; margin-bottom:12px;">
+        <span class="status-badge success">Completed</span>
+      </div>
+      <div class="summary-row"><span class="k">To</span><span class="v">City Electric Co.</span></div>
+      <div class="summary-row"><span class="k">Amount</span><span class="v">-$86.40</span></div>
+      <div class="summary-row"><span class="k">Date</span><span class="v">Today, 2:14pm</span></div>
+      <div class="summary-row"><span class="k">From</span><span class="v">Everyday •••• 4821</span></div>
+      <div class="summary-row"><span class="k">Reference</span><span class="v">BP-88213</span></div>
+    </div>
+
+    <div class="summary-card" data-state="pending" hidden>
+      <div style="text-align:center; margin-bottom:12px;">
+        <span class="status-badge pending">Processing</span>
+      </div>
+      <div class="summary-row"><span class="k">To</span><span class="v">J. Tan — •••• 2214</span></div>
+      <div class="summary-row"><span class="k">Amount</span><span class="v">-$150.00</span></div>
+      <div class="summary-row"><span class="k">Date</span><span class="v">Today, 9:02am</span></div>
+      <div class="summary-row"><span class="k">Expected</span><span class="v">Within a few minutes</span></div>
+    </div>
+    <p data-state="pending" hidden style="font-size:12px; color:var(--color-text-secondary);">
+      This transfer is still being processed by the network. You'll get a notification the moment it completes — no need to check back manually.
+    </p>
+
+    <div class="summary-card" data-state="failed" hidden>
+      <div style="text-align:center; margin-bottom:12px;">
+        <span class="status-badge error">Failed</span>
+      </div>
+      <div class="summary-row"><span class="k">To</span><span class="v">Savings •••• 9931</span></div>
+      <div class="summary-row"><span class="k">Amount</span><span class="v">$500.00 (not moved)</span></div>
+      <div class="summary-row"><span class="k">Date</span><span class="v">Yesterday, 4:47pm</span></div>
+      <div class="summary-row"><span class="k">Reason</span><span class="v">Network timeout</span></div>
+    </div>
+    <p data-state="failed" hidden style="font-size:12px; color:var(--color-error); font-weight:600;">
+      No money left your account for this attempt. It's safe to try the transfer again.
+    </p>
+    <a data-state="failed" hidden class="btn btn-primary" href="transfer-details.html" style="margin-top:16px;">Retry transfer</a>
+
+    <div class="summary-card" data-state="success2" hidden>
+      <div style="text-align:center; margin-bottom:12px;">
+        <span class="status-badge success">Completed</span>
+      </div>
+      <div class="summary-row"><span class="k">From</span><span class="v">Employer Pte Ltd</span></div>
+      <div class="summary-row"><span class="k">Amount</span><span class="v">+$3,200.00</span></div>
+      <div class="summary-row"><span class="k">Date</span><span class="v">Yesterday, 12:00am</span></div>
+      <div class="summary-row"><span class="k">To</span><span class="v">Everyday •••• 4821</span></div>
+    </div>
+
+  </main>
+</div>
+
+<script>
+  // Lightweight state switcher for this static prototype — not app logic,
+  // just lets one file demonstrate 4 distinct status states via ?state=.
+  var state = new URLSearchParams(location.search).get('state') || 'success';
+  document.querySelectorAll('[data-state]').forEach(function (el) {
+    el.hidden = el.getAttribute('data-state') !== state;
+  });
+</script>
+</body>
+</html>

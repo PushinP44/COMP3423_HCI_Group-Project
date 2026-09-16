@@ -20,10 +20,12 @@ Draft framing to build from (`2026-09-16-comp3423-project-plan.md`, Part 2):
 
 ## 1.4 Scope: the 5 features
 
-[FILL IN once the team finalizes the feature list in Week 3 — list the 5 features by name, one sentence each on why each was chosen (ties to a specific usability problem + HCI principle). Cross-check against the rubric line "scope realistic for 5 students in 8 weeks" — if a feature looks like it needs new backend logic or complex multi-screen flows beyond a redesign, consider swapping it before finalizing.]
+**Draft feature list (`prototype/`) — confirm/replace once the real heuristic evaluation (`research/heuristic-evaluation.md`) is done on the actual chosen app; these were chosen to match the draft justification in §1.1, not real findings yet.**
 
-1. [Feature 1]
-2. [Feature 2]
-3. [Feature 3]
-4. [Feature 4]
-5. [Feature 5]
+1. **Home Dashboard & Quick Actions** — surfaces the most frequent actions (transfer, pay bills, deposit, cards) directly on the home screen instead of burying them in menus (`prototype/home.html`).
+2. **Simplified Transfer Flow** — collapses a multi-step confirmation flow into 2 steps with a clear review screen, plus explicit success/failure feedback (`prototype/transfer-details.html` → `transfer-confirm.html` → `transfer-success.html`/`transfer-error.html`).
+3. **Bill Pay Findability** — a dedicated, searchable bill-pay entry point with saved billers surfaced up front (`prototype/billpay.html` → `billpay-confirm.html` → `billpay-success.html`).
+4. **Transaction Status Visibility** — every transaction shows an explicit, color-and-text status (completed/processing/failed), with a failed transaction stating clearly that no funds moved (`prototype/transactions.html` → `transaction-detail.html`).
+5. **Accessible Account Overview** — 44×44pt+ touch targets, visible focus states, labels that don't rely on color alone, and screen-reader-friendly balance labels (`prototype/account.html`).
+
+A first-pass HTML/CSS draft of all 5 exists in `prototype/` (see `prototype/README.md` for how to bring it into Figma via the `html.to.design` plugin) — treat it as a starting point to revise once real problem evidence is in, not a final design.
