@@ -32,7 +32,16 @@
 
 ---
 
-## Part 2 — App Selection (finish by end of Week 1)
+## Part 2 — App Selection ✅ DECIDED: Mobile Banking App
+
+**Selected app: a mobile banking app.** Team should pick one specific real app everyone can install and screenshot (e.g., a bank app already used by a majority of the team, so real screenshots and real test participants are both easy to get) — confirm the specific bank/app in Week 1 and record it in `report/01-introduction.md`.
+
+**Draft justification (refine with the real app's specifics in Week 1 — Interaction/Accessibility leads should confirm these pain points actually reproduce in the chosen app before finalizing):**
+> Mobile banking apps sit at the intersection of high task stakes (moving money, checking balances) and low error tolerance — a poorly designed flow doesn't just frustrate users, it erodes trust and can cause real financial mistakes. Common, well-documented failure points include: transfer/payment flows with too many confirmation steps or unclear error states, dense information architecture that buries frequently-used actions (e.g., bill pay, transfer limits) under menus, weak feedback on transaction status, and accessibility gaps (low contrast on balance figures, small touch targets on numeric keypads, poor screen-reader labeling on account lists). This combination of high-stakes tasks, rich literature on trust/security UX, and natural accessibility angles makes it a well-scoped redesign target for a 5-person, 8-week project.
+
+**Draft target user group (refine with User Researcher in Week 1–3):** Working adults who do most of their banking via the mobile app rather than branch visits, comfortable with smartphones but not power users — i.e., people who want banking to be fast and low-friction, not people who want advanced features. (Team should sharpen this once the specific app and its actual user base are confirmed — this is a starting hypothesis, not a finding.)
+
+**Note on original shortlist** (kept for reference — food delivery and public transit were the other ranked candidates; mobile banking was chosen for its trust/security literature base and natural accessibility angle):
 
 The rubric explicitly grades **"scope realistic for 5 students in 8 weeks" (2 marks)** — the biggest risk here is picking something too ambitious (non-screen modality, deep backend complexity, or a domain no one can recruit real test users for).
 
@@ -48,9 +57,9 @@ Shortlist (ranked by 8-week feasibility + ease of recruiting 5 real test partici
 
 Whichever is chosen: confirm **(a)** the app has enough recognizable usability problems to fill 5 distinct features, **(b)** at least the Accessibility & Evaluation Lead can install/screenshot it now, and **(c)** the team can realistically recruit ≥5 real people who'd use it (not just classmates pretending).
 
-- [ ] Pick the app + write a 3–4 sentence justification (feeds directly into Introduction, 2 rubric marks: "Justification of app choice and why the existing interface fails").
-- [ ] Define the target user group (feeds User Researcher's persona/journey work).
-- [ ] Draft a candidate list of 8–10 usability problems (over-scope slightly; you'll cut to 5 features in Week 3).
+- [x] Pick the app (mobile banking) + draft justification above — **team to confirm the specific real app** and tighten the justification with app-specific detail (feeds directly into Introduction, 2 rubric marks: "Justification of app choice and why the existing interface fails").
+- [ ] Sharpen the target user group draft above with User Researcher (feeds persona/journey work).
+- [ ] Draft a candidate list of 8–10 usability problems from the real app (over-scope slightly; cut to 5 features in Week 3) — use `research/candidate-usability-problems.md`.
 
 ---
 
