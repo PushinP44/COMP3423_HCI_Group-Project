@@ -20,12 +20,10 @@ Draft framing to build from (`2026-09-16-comp3423-project-plan.md`, Part 2):
 
 ## 1.4 Scope: the 5 features
 
-**Draft feature list (`prototype/`) — confirm/replace once the real heuristic evaluation (`research/heuristic-evaluation.md`) is done on the actual chosen app; these were chosen to match the draft justification in §1.1, not real findings yet.**
+**Draft feature list — confirm/replace once the real heuristic evaluation (`research/heuristic-evaluation.md`) is done on the actual chosen app; these were chosen to match the draft justification in §1.1, not real findings yet. Prototyping happens directly in Figma (see `assets/figma/README.md`).**
 
-1. **Home Dashboard & Quick Actions** — surfaces the most frequent actions (transfer, pay bills, deposit, cards) directly on the home screen instead of burying them in menus (`prototype/home.html`).
-2. **Simplified Transfer Flow** — collapses a multi-step confirmation flow into 2 steps with a clear review screen, plus explicit success/failure feedback (`prototype/transfer-details.html` → `transfer-confirm.html` → `transfer-success.html`/`transfer-error.html`).
-3. **Bill Pay Findability** — a dedicated, searchable bill-pay entry point with saved billers surfaced up front (`prototype/billpay.html` → `billpay-confirm.html` → `billpay-success.html`).
-4. **Transaction Status Visibility** — every transaction shows an explicit, color-and-text status (completed/processing/failed), with a failed transaction stating clearly that no funds moved (`prototype/transactions.html` → `transaction-detail.html`).
-5. **Accessible Account Overview** — 44×44pt+ touch targets, visible focus states, labels that don't rely on color alone, and screen-reader-friendly balance labels (`prototype/account.html`).
-
-A first-pass HTML/CSS draft of all 5 exists in `prototype/` (see `prototype/README.md` for how to bring it into Figma via the `html.to.design` plugin) — treat it as a starting point to revise once real problem evidence is in, not a final design.
+1. **Home Dashboard & Quick Actions** — surfaces the most frequent actions (transfer, pay bills, deposit, cards) directly on the home screen instead of burying them in menus.
+2. **Simplified Transfer Flow** — collapses a multi-step confirmation flow into 2 steps with a clear review screen, plus explicit success/failure feedback.
+3. **Bill Pay Findability** — a dedicated, searchable bill-pay entry point with saved billers surfaced up front.
+4. **Transaction Status Visibility** — every transaction shows an explicit, color-and-text status (completed/processing/failed), with a failed transaction stating clearly that no funds moved.
+5. **Accessible Account Overview** — 44×44pt+ touch targets, visible focus states, labels that don't rely on color alone, and screen-reader-friendly balance labels.

@@ -27,11 +27,6 @@ testing/                  Testing-stage working documents (User Researcher owns 
   recruitment-script.md      Outreach message + screening criteria
   results-log.md             Where raw Maze results get summarized (raw export goes in report appendix)
 
-prototype/                Real, working HTML/CSS draft of the redesign (14 screens, 5 features)
-  index.html                 Screen picker/preview
-  README.md                  How to import into Figma via the html.to.design plugin
-  (see report/01-introduction.md §1.4 for what each feature is and why)
-
 assets/                   Evidence
   screenshots/existing-app/  Real screenshots of the current app ONLY — see README inside
   screenshots/redesign/      Before/after captures for the report
