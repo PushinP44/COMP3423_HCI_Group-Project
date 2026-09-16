@@ -58,19 +58,72 @@ Whichever is chosen: confirm **(a)** the app has enough recognizable usability p
 
 Each role owns one report section outright but every design decision anywhere in the report must be tied to a **named HCI principle** (rubric requirement, not optional prose) — this is a cross-cutting QA responsibility for the Project Lead, not just a Feature Details requirement.
 
-| Role | Owns (report) | Core deliverables |
-|---|---|---|
-| **Project Lead & UX Strategist** | Introduction, Conclusion | Timeline/coordination; enforces HCI-principle citations throughout; final QA pass; owns the workload declaration table |
-| **User Researcher** | Testing Method, Results & Discussion | Target user group, personas, user journey; Maze test design (tasks, metrics, recruitment plan); recruitment execution |
-| **Interaction Designer** | Application walkthrough (part of Overall Design) | Information architecture, wireframes, Figma prototype structure (navigation, states) |
-| **Visual & UI Designer** | — (contributes across Overall Design + Feature Details) | Visual language/style guide, high-fidelity screens, owns the PPT |
-| **Accessibility & Evaluation Lead** | Accessibility considerations (Overall Design) + Accessibility Bonus items | Heuristic evaluation of existing app, accessibility audit, accessibility accommodations in redesign, accessibility-aware Maze task/participant |
+> Names not finalized yet — using `Member 1`–`Member 5` as placeholders (Member 1 = Group Leader per Appendix I's `*` convention). Swap in real names/SIDs once the group is locked in; every other reference to roles in this plan stays valid either way.
 
-- [ ] Assign names to roles; fill the Appendix I cover-page table format now (Name, SID, Role, Key tasks) even in draft form — it's the artifact markers use to check "each declared role should have a visible, distinct contribution."
+| Name (placeholder) | Role | Owns (report) | Core deliverables |
+|---|---|---|---|
+| **Member 1** (Leader) | Project Lead & UX Strategist | Introduction, Conclusion | Timeline/coordination; enforces HCI-principle citations throughout; final QA pass; owns the workload declaration table |
+| **Member 2** | User Researcher | Testing Method, Results & Discussion | Target user group, personas, user journey; Maze test design (tasks, metrics, recruitment plan); recruitment execution |
+| **Member 3** | Interaction Designer | Application walkthrough (part of Overall Design) | Information architecture, wireframes, Figma prototype structure (navigation, states) |
+| **Member 4** | Visual & UI Designer | — (contributes across Overall Design + Feature Details) | Visual language/style guide, high-fidelity screens, owns the PPT |
+| **Member 5** | Accessibility & Evaluation Lead | Accessibility considerations (Overall Design) + Accessibility Bonus items | Heuristic evaluation of existing app, accessibility audit, accessibility accommodations in redesign, accessibility-aware Maze task/participant |
+
+- [ ] Once names are assigned: replace `Member 1`–`Member 5` here and fill the Appendix I cover-page table (Name, SID, Role, Key tasks) — it's the artifact markers use to check "each declared role should have a visible, distinct contribution."
 
 ---
 
-## Part 4 — Week-by-Week Plan
+## Part 4 — Timeline
+
+### Gantt Chart
+
+Shows workstreams as overlapping bars, not strict weekly boxes — this is what makes the Week 7 fix (Part 5, risk 1) and the early-recruitment fix (risk 2) visible: Related Work/Intro drafting and hi-fi prototyping start well before the data-dependent sections do.
+
+```mermaid
+gantt
+    title COMP3423 Group Project — 8-Week Timeline (Member 1–5, names TBD)
+    dateFormat YYYY-MM-DD
+    todayMarker on
+
+    section Setup
+    Pre-work: group, tools, accounts      :done, setup, 2026-09-16, 6d
+    App choice + target user group        :milestone, m1, 2026-09-28, 0d
+
+    section Research & Writing
+    Related Work reading + logging        :active, relwork, 2026-09-22, 28d
+    Introduction drafting                 :intro, 2026-10-06, 7d
+
+    section Analysis (Member 5 lead)
+    Heuristic eval + accessibility audit  :audit, 2026-09-29, 7d
+
+    section Design (Member 2/3)
+    User journey + personas               :journey, 2026-10-06, 7d
+    IA + low-fi wireframes                :wireframes, 2026-10-06, 7d
+    Feature list finalized (5 features)   :milestone, m2, 2026-10-12, 0d
+
+    section Checkpoint
+    Progress snapshot due                 :crit, milestone, m3, 2026-10-19, 0d
+
+    section Prototype (Member 3/4)
+    Hi-fi Figma, all 5 features           :hifi, 2026-10-13, 14d
+    Prototype complete                    :milestone, m4, 2026-10-26, 0d
+
+    section Testing (Member 2)
+    Maze test plan finalized              :testplan, 2026-10-13, 7d
+    Participant recruitment               :recruit, 2026-10-20, 14d
+    Run Maze test (>=5 participants)      :crit, runtest, 2026-10-27, 7d
+
+    section Iterate & Report
+    Analyze results + iterate prototype   :iterate, 2026-11-03, 7d
+    Write Design/Feature/Testing sections :writeup, 2026-11-03, 7d
+    PPT draft (Member 4)                  :ppt, 2026-11-03, 7d
+
+    section Finalize
+    QA pass + page/ref/link checks        :qa, 2026-11-10, 3d
+    Record video (<=10 min)               :video, 2026-11-12, 3d
+    Submit (zip + video)                  :crit, milestone, due, 2026-11-15, 0d
+```
+
+### Week-by-Week Detail
 
 Each week lists concrete, checkable tasks per role. Deviations from the spec's suggested timeline are called out with **why**.
 
